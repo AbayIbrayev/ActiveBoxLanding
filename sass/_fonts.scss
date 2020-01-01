@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Open Sans Regular';
+  font-display: swap;
+  src: url('OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  font-display: swap;
+  src: url('../fonts/Raleway-Regular.eot');
+  src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Semibold';
+  font-display: swap;
+  src: url('../fonts/Raleway-SemiBold.eot');
+  src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-SemiBold.woff') format('woff'),
+    url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  font-display: swap;
+  src: url('../fonts/Raleway-Bold.eot');
+  src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin openSans {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+@mixin semiBold {
+  font-family: 'Raleway Semibold', sans-serif;
+}
+
+@mixin regular {
+  font-family: 'Raleway Regular', sans-serif;
+}
+
+@mixin bold {
+  font-family: 'Raleway Bold', sans-serif;
+}
+
+
+
