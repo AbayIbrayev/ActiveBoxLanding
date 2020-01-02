@@ -427,6 +427,7 @@ img {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: none;
 }
 
 .button:hover {
@@ -895,6 +896,31 @@ img {
   }
   .image-bg {
     display: none;
+  }
+}
+
+.download {
+  text-align: center;
+}
+
+.download__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.download__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Raleway Bold', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .download__title {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
