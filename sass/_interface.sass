@@ -17,8 +17,8 @@ img
   border: none
   &:hover
     background-color: darken($primary, 10%)
-  .bg-secondary
-    background-color: $bg-secondary
+.bg-secondary
+  background-color: $bg-secondary
 .section
   padding: 120px 0
 .contacts
@@ -32,5 +32,19 @@ img
       margin-right: 0
     &:hover
       opacity: 1
+  &__link
+    text-decoration: none
+.contacts-o
+  display: flex
+  justify-content: center
+  &__icon
+    margin-right: 5px
+    cursor: pointer
+    opacity: 1
+    transition: opacity .3s ease-in-out
+    &:last-child
+      margin-right: 0
+    &:hover
+      opacity: .5
   &__link
     text-decoration: none

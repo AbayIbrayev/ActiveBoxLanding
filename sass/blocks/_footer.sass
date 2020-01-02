@@ -1,0 +1,41 @@
+.footer
+  text-align: center
+  color: #ffffff
+  &-block
+    padding: 70px 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      flex-basis: 33.33%
+    &__title
+      text-transform: uppercase
+      font-size: 14px
+      margin: 0
+      margin-bottom: 20px
+    &__content
+      opacity: .5
+      font-size: 14px
+  &__text
+    margin: 0
+  &-bottom
+    background-color: #313454
+    padding: 30px 0
+    &__copyright
+      margin: 0
+    &__author
+      margin: 0
+      margin-top: 5px
+  &-heart
+    color: $primary
+@media screen and (max-width: 768px)
+  .footer
+    &-block
+      &__item
+        flex-basis: 100%
+        margin: 0 auto 70px
+        &:last-child
+          margin-bottom: 0
+    &__text
+        max-width: 300px
+        margin: auto
