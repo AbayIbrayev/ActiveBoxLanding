@@ -20,3 +20,16 @@ img
     background-color: $bg-secondary
 .section
   padding: 120px 0
+.contacts
+  display: flex
+  &__icon
+    margin-right: 5px
+    cursor: pointer
+    opacity: .7
+    transition: opacity .3s ease-in-out
+    &:last-child
+      margin-right: 0
+    &:hover
+      opacity: 1
+  &__link
+    text-decoration: none
