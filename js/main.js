@@ -11,7 +11,7 @@ $(document).ready(function () {
   $('a[href^="#"]').click(function () {
     var _href = $(this).attr("href");
     $("html, body").animate({
-      scrollTop: $(_href).offset().top - 120 + 'px'
+      scrollTop: $(_href).offset().top - 60 + 'px'
     });
     return false;
   });
@@ -22,13 +22,16 @@ $(document).ready(function () {
     if (switcher.prop('checked') == true) {
       $('.nav').css('right', '-100%');
       switcher.prop('checked', false);
+      document.body.style.overflow = '';
     } 
   });
   switcher.click(function() {
     if (switcher.prop('checked') == true) {
       $('.nav').css('right', '0%');
+      document.body.style.overflow = 'hidden';
     } else {
       $('.nav').css('right', '-100%');
+      document.body.style.overflow = '';
     }
   });
 
