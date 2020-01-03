@@ -519,6 +519,10 @@ img {
   padding: 35px 0;
 }
 
+.nav {
+  z-index: 2;
+}
+
 .nav-button {
   display: none;
   -webkit-box-orient: vertical;
@@ -537,13 +541,15 @@ img {
   border-right: 1px solid rgba(81, 11, 186, 0.1);
   cursor: pointer;
   outline: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+}
+
+.nav-button_change {
+  display: none;
 }
 
 .nav-button_change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-          transform: rotate(-45deg) translate(-5px, 5px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+          transform: rotate(-45deg) translate(-4px, 4px);
 }
 
 .nav-button_change .bar2 {
@@ -551,8 +557,8 @@ img {
 }
 
 .nav-button_change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-          transform: rotate(45deg) translate(-5px, -5px);
+  -webkit-transform: rotate(45deg) translate(-3px, -3px);
+          transform: rotate(45deg) translate(-3px, -3px);
 }
 
 .nav-button__line {
@@ -571,7 +577,6 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Raleway Bold', sans-serif;
-  margin-right: 55px;
   opacity: .75;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
@@ -581,22 +586,68 @@ img {
   opacity: 1;
 }
 
-.nav__link:last-child {
+.nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-right: 55px;
+}
+
+.nav__item:last-child {
   margin-right: 0;
+}
+
+.switcher {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 991px) {
   .navbar__inner {
     padding: 20px 0;
   }
-  .nav__link {
-    opacity: 0;
-    display: none;
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3a3e64;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
   }
   .nav-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .nav-button_change {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item {
+    padding: 20px 0;
+    margin-right: 0;
+  }
+  .switcher:checked ~ .nav {
+    right: 0;
   }
 }
 

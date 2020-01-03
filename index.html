@@ -16,17 +16,36 @@
             <img src="img/logo.png" alt="logo">
           </div>
 
+          <input type="checkbox" class="switcher" id="menu">
+          <label for="menu" class="nav-button nav__button">
+            <span class="nav-button__line bar1"></span>
+            <span class="nav-button__line bar2"></span>
+            <span class="nav-button__line bar3"></span>
+          </label>
+
           <nav class="nav">
-            <button class="nav-button nav__button">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#Features" class="nav__link">Features</a>
+              </li class="nav__item">
+              <li class="nav__item">
+                <a href="#Works" class="nav__link">Works</a>
+              </li>
+              <li class="nav__item">
+                <a href="#Team" class="nav__link">Our Team</a>
+              </li>
+              <li class="nav__item">
+                <a href="#Testimonials" class="nav__link">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a href="#Download" class="nav__link">Download</a>
+              </li>
+            </ul>
+            <label for="menu" class="nav-button_change nav__button">
               <span class="nav-button__line bar1"></span>
               <span class="nav-button__line bar2"></span>
               <span class="nav-button__line bar3"></span>
-            </button>
-            <a href="#Features" class="nav__link">Features</a>
-            <a href="#Works" class="nav__link">Works</a>
-            <a href="#Team" class="nav__link">Our Team</a>
-            <a href="#Testimonials" class="nav__link">Testimonials</a>
-            <a href="#Download" class="nav__link">Download</a>
+            </label>
           </nav>
         </div>
       </div>
@@ -213,7 +232,7 @@
 
 <!-- ------------------------------ /reviews ------------------------------- -->
 
-    <section class="section download" id="download">
+    <section class="section download" id="Download">
       <div class="container">
         <h2 class="download__title">Are You Ready to Start? Download Now For Free!</h2>
         <p class="download__text">Fusce dapibus, tellus ac cursus commodo</p>
