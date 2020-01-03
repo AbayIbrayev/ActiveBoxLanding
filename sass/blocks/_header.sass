@@ -2,12 +2,12 @@
   background: url('../img/hero/hero-bg.png') no-repeat
   background-size: cover
 .navbar 
-  border-bottom: 1px solid rgba($text-color-light, 0.5)
   &__inner
     display: flex
     justify-content: space-between
     align-items: center
     padding: 35px 0
+    border-bottom: 1px solid rgba($text-color-light, 0.5)
 .nav
   z-index: 2
   &-button
@@ -61,8 +61,10 @@
   visibility: hidden
 @media screen and (max-width: 991px)
   .navbar
+    border-bottom: 1px solid rgba($text-color-light, 0.5)
     &__inner
       padding: 20px 0
+      border-bottom: 0
   .nav
     position: fixed
     width: 100%

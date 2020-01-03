@@ -2,6 +2,27 @@
   display: flex
   justify-content: space-between
   margin-top: -70px
+  &-slider
+    max-width: 500px
+    &__dots
+      margin: auto
+      display: flex
+      justify-content: center
+      list-style: none
+      align-items: center
+      padding: 0
+      margin-top: 20px
+      li
+        width: 10px
+        height: 10px
+        background-color: $text-color-light
+        margin: 5px
+        border-radius: 50%
+        cursor: pointer
+        &.slick-active
+          background-color: #ffffff
+      button
+        display: none
   &-item
     flex-basis: 50%
     background-color: #53354a
@@ -15,7 +36,7 @@
       max-width: 500px
       margin-bottom: 30px
     &__title
-      font-size: 14px
+      font-size: 13px
       text-transform: uppercase
       color: #ffffff
       margin: 0
@@ -29,12 +50,16 @@
       &__text
         max-width: 420px
         font-size: 26px
+    &-slider
+      max-width: 420px
 @media screen and (max-width: 991px)
   .reviews
     &-block
       &__text
         max-width: 300px
         font-size: 20px
+    &-slider
+      max-width: 300px
   .image-bg
     background: url('../img/reviews/reviews-1.png') no-repeat right 25% top
 @media screen and (max-width: 768px)
@@ -48,6 +73,8 @@
       padding: 120px 0
       &__text
         margin: 0 auto 30px
+    &-slider
+      margin: auto
 @media screen and (max-width: 480px)
   .reviews
     &-item
