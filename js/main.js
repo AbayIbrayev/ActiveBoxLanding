@@ -31,4 +31,17 @@ $(document).ready(function () {
       $('.nav').css('right', '-100%');
     }
   });
+
+/* --------------------------------- navbar --------------------------------- */
+  let hero = $('.hero');
+  $(window).on('scroll load resize', function () {
+    let windowTop = $(this).scrollTop(), 
+        heroH = hero.innerHeight();
+    if (windowTop > heroH) {
+      $('.navbar').addClass('fixed');
+    } else {
+      $('.navbar').removeClass('fixed');
+    }
+  });
+
 });

@@ -1,15 +1,23 @@
 .header
   background: url('../img/hero/hero-bg.png') no-repeat
   background-size: cover
-.navbar 
+.navbar
+  z-index: 2
   &__inner
     display: flex
     justify-content: space-between
     align-items: center
     padding: 35px 0
     border-bottom: 1px solid rgba($text-color-light, 0.5)
+.fixed
+  position: fixed
+  width: 100%
+  background-color: $bg-secondary
+  top: 0
+  .navbar__inner
+    padding: 20px 0
 .nav
-  z-index: 2
+  z-index: 3
   &-button
     display: none
     flex-direction: column
